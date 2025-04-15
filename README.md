@@ -35,11 +35,6 @@ The project reflects strong collaboration, creative design, and technical develo
 
 ---
 
-## 📷 Preview  
-![Preview](images/logo.png)
-
----
-
 ## 👩‍💻 Team
 This project was developed by a student team under a university course project titled **"FutureCoders"**.
 
