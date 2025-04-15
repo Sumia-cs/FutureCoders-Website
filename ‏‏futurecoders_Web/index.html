@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureCoders</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/logo.png" alt="FutureCoders Logo" height="40"></div>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <video autoplay muted loop class="bg-video">
+        <source src="images/bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-text">
+        <h1>Welcome to FutureCoders</h1>
+    </div>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Our Team</h2>
+    <p>We are a dedicated group of students passionate about technology, innovation, and collaboration. Our mission is to build creative web solutions and explore the future of coding.</p>
+    <a href="about.html" class="about-btn">Read More</a>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card"><h3>Web Development</h3></div>
+        <div class="card"><h3>UI/UX Design</h3></div>
+        <div class="card"><h3>Database Design</h3></div>
+    </div>
+    <a href="services.html" class="services-btn">Explore All Web Services</a>
+</section>
+
+<!-- Members Section -->
+<section id="members" class="members">
+    <h2>Meet the Team</h2>
+    <div class="cards">
+        <div class="card"><h3>MEMBER1</h3><p>Web Developer</p></div>
+        <div class="card"><h3>MEMBER2</h3><p>UI/UX Designer</p></div>
+        <div class="card"><h3>MEMBER3</h3><p>Back-end Developer</p></div>
+        <div class="card"><h3>MEMBER4</h3><p>Database Specialist</p></div>
+    </div>
+    <a href="members.html" class="members-btn">Meet All Members</a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <a href="contact.html" class="contact-btn">Click Here</a>
+</section>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer').innerHTML = data;
+});
+</script>
+
+
+
+<a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+</body>
+</html>

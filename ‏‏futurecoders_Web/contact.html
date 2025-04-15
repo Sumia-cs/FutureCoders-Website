@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FutureCoders</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/logo.png" alt="FutureCoders Logo" height="40"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="members.html">Members</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="contact" class="contact">
+    <div class="contact-bg"></div>
+    <h2>Contact Us</h2>
+    <form action="php/contact.php" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <textarea name="message" placeholder="Write your message here..." required></textarea>
+        <button type="submit">Send Message</button>
+    </form>    
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer').innerHTML = data;
+});
+</script>
+
+
+<a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>

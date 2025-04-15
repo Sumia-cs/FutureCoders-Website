@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FutureCoders</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/logo.png" alt="FutureCoders Logo" height="40"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="about">
+    <div class="about-bg"></div>
+    <h2>About Our Team</h2>
+    <br>
+    <h4>FutureCoders is a student-driven team passionate about technology, creativity, and innovation. Our mission is to design and develop modern web solutions that reflect our technical skills and teamwork spirit.</h4>
+    <h4>We aim to create websites and applications that are not only functional but also engaging and user-friendly. Our team works collaboratively to bring ideas to life, solve complex problems, and continuously learn and grow in the field of web development and design.</h4>
+</section>
+<div id="footer"></div>
+
+<script>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer').innerHTML = data;
+});
+</script>
+
+<a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team - FutureCoders</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="images/logo.png" alt="FutureCoders Logo" height="40"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="members">
+    <img src="images/Team.jpg" alt="Team Background" class="background-img">
+    <h2>Meet the Team</h2>
+
+    <div class="cards">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>MEMBER1</h1>
+                    <p>Web Developer</p>
+                </div>
+                <div class="flip-card-back">
+                    <p>MEMBER1 builds clean and responsive websites and enjoys creating interactive user experiences.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>MEMBER2</h1>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="flip-card-back">
+                    <p>MEMBER2 designs beautiful, user-centered interfaces and focuses on creating smooth digital journeys.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>MEMBER3</h1>
+                    <p>Back-end Developer</p>
+                </div>
+                <div class="flip-card-back">
+                    <p>MEMBER3 works with databases and server logic, ensuring the system runs securely and efficiently.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>MEMBER4</h1>
+                    <p>Database Specialist</p>
+                </div>
+                <div class="flip-card-back">
+                    <p>MEMBER4 manages data structures, ensuring data integrity and designing efficient queries.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer').innerHTML = data;
+});
+</script>
+
+
+<a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>
